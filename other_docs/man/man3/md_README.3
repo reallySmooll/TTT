@@ -1,0 +1,51 @@
+.TH "md_README" 3 "Mon Mar 6 2023" "Version 0" "TTT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md_README \- TTT 
+.PP
+TTT is a simple wrapper library around SFML made to simplify the making of an SFML game\&.
+.SH "Building"
+.PP
+\fBNOTE: To build on Windows or macOS, you will need to check the meson documentation by yourself\&. Maybe I'll consider doing that but that's a project for another day\&.\fP
+.SS "Dependencies"
+Like with any project, there will always be some dependencies (no exceptions), this project has them:
+.PP
+.IP "\(bu" 2
+SFML (the library that's being wrapped)
+.IP "\(bu" 2
+Meson (the build system)
+.IP "\(bu" 2
+Ninja
+.IP "\(bu" 2
+git
+.IP "\(bu" 2
+A C++ compiler
+.IP "\(bu" 2
+pkg-conf
+.PP
+.SS "Actually building"
+4 commands, not much else if you have all of the needed dependencies\&.
+.PP
+.PP
+.nf
+$ git clone https://github\&.com/reallySmooll/TTT\&.git
+$ cd TTT
+$ meson setup build
+$ meson compile \-C build
+.fi
+.PP
+.PP
+You can also do:
+.PP
+.PP
+.nf
+$ sudo meson install \-C build
+$ sudo mv /usr/local/lib/pkgconfig/TTT\&.pc /usr/lib/pkgconfig/
+.fi
+.PP
+.PP
+The latter commands will install the library system-wide so you can use it anywhere without having to keep a \fC\&.a\fP file in your \fClib\fP folder\&.
+.SH "Documentation"
+.PP
+The documentation is a work in progress so please be patient\&. 
