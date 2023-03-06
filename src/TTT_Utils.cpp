@@ -1,3 +1,7 @@
+/** \file TTT_Utils.cpp
+ * \brief Defines the "Utils" class.
+ */
+
 #include "include/TTT/TTT.hpp"
 
 #include <sstream>
@@ -19,7 +23,13 @@ namespace TTT
 
     const float startTime = clock.getElapsedTime().asSeconds();
 
-    // Function to calculate FPS.
+    /** \brief "showFPS" calculates and displays a nice FPS number when the "F3" key is pressed.
+     *
+     * \param window reference to the window of type "sf::RenderWindow".
+     * \param font constant reference to the font of type "sf::Font".
+     * \param fontSize unsigned integer representing the size of the font.
+     * \param color sf::Color representing the color of the FPS font with a default value of "sf::Color::White".
+     */
     void Utils::showFPS(sf::RenderWindow& window, const sf::Font& font, unsigned int fontSize, sf::Color color)
     {
         frameCount++;
@@ -31,7 +41,7 @@ namespace TTT
             const float fps = frameCount / (elapsedTime - startTime);
 
             ss.str("");
-            ss << "FPS: " << std::floor(fps);
+            ss << "FPS: " << std::floor(fps + 1);
 
             fpsText.setString(ss.str());
 
@@ -64,7 +74,10 @@ namespace TTT
         }
     }
 
-    // Function to create a font and load it. Shortens the amount of code that has to be written.
+    /** \brief Function to create a font and load it. Shortens the amount of code that has to be written.
+     *
+     * \param filename a string representing the path to the font file.
+     */
     sf::Font Utils::createFont(std::string filename)
     {
         Log::log(Log::UTILS, Log::INFO, "Creating font from file: \"" + filename + "\"...");
@@ -79,9 +92,14 @@ namespace TTT
         return font;
     }
 
-    // Function to create and load a texture to a sprite. Shortens the amount of code that has to be written.
-    // Texture variable has to be created manually and passed as a paramter to the function because the sprites
-    // act weird when the texture is created in the function.
+    /** \brief Function to create and load a texture to a sprite. Shortens the amount of code that has to be written.
+     *
+     * Texture variable has to be created manually and passed as a paramter to the function because the sprites
+     * act weird when the texture is created in the function.
+     *
+     * \param texture reference to the texture of type "sf::Texture".
+     * \param filename a string representing the path to the texture file.
+     */
     sf::Sprite Utils::createSprite(sf::Texture& texture, std::string filename)
     {
         Log::log(Log::UTILS, Log::INFO, "Creating sprite from texture file: \"" + filename + "\"...");
@@ -98,6 +116,10 @@ namespace TTT
         return sprite;
     }
 
+    /** \brief Function makes the program "sleep" for a specified amount of time in seconds.
+     *
+     * \param timeInSeconds integer representing the time in seconds.
+     */
     void Utils::sleepFor(int timeInSeconds)
     {
         Log::log(Log::UTILS, Log::INFO, "Sleeping for " + std::to_string(timeInSeconds) + "s...");
@@ -106,6 +128,13 @@ namespace TTT
         std::this_thread::sleep_for(timespan);
     }
 
+    /** \brief Function creates text that can be displayed in the window.
+     *
+     * \param font constant reference to the font of type "sf::Font".
+     * \param fontSize unsigned integer representing the size of the font.
+     * \param position 2D vector representing the position on the x and y axis in the window.
+     * \param textContents a string representing what text will be displayed in the window.
+     */
     sf::Text Utils::createText(const sf::Font& font, unsigned int fontSize, sf::Vector2f position, std::string textContents)
     {
         Log::log(Log::UTILS, Log::INFO, "Creating text: \"" + textContents + "\"...");

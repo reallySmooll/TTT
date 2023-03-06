@@ -1,3 +1,7 @@
+/** \file TTT_Log.cpp
+ * \brief Defines the "Log" class.
+ */
+
 #include "include/TTT/TTT.hpp"
 
 #include <iostream>
@@ -39,6 +43,12 @@ namespace TTT
 
     std::fstream logFile;
 
+    /** \brief Function to log the debug output to the terminal and/or the "TTT.log" file.
+     *
+     * \param module module representing the file or library the info/error/success was noted in.
+     * \param level level representing the level of severity that was logged.
+     * \param message a string representing the message associated with the log.
+     */
     void Log::log(module module, level level, std::string message)
     {
         logFile.open("TTT.log", logFile.app);

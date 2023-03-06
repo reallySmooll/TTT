@@ -1,3 +1,7 @@
+/** \file TTT_Window.cpp
+ * \brief Defines the "Window" class.
+ */
+
 #include "include/TTT/TTT.hpp"
 
 #include <filesystem>
@@ -5,17 +9,29 @@
 
 namespace TTT
 {
-    // If this is true, the showFPS function will be enabled on startup.
-    // If this is false, the showFPS function will require the F3 key to be pressed to start.
-    bool Window::toggleFPS;
+    /** If true, the FPS will be shown at startup.\n
+     * If false, to show the FPS, the user will need to press the "F3" key.
+     */
+    bool Window::toggleFPS; 
 
-    /* "verbose" is undefined here because if it had been defined,
-     * the user wouldn't be able to switch it to false if debug output is unwanted. */
-    bool Window::verbose;
+    /** If true, displays debug output of the library as well as logs them to a file called "TTT.log".\n
+     * If false, does not display debug output of the library but logs them to a file called "TTT.log".
+     */
+    bool Window::verbose; 
 
-    // If false, will not create a default event loop.
+    /** If true, creates a default immutable event loop.\n
+     * If false, does not create a default immutable event loop.
+     */
     bool Window::shouldCreateDefaultEventLoop;
 
+    /** \brief The "Window" constructor used to create the window using sf::RenderWindow.
+     *
+     * \param windowWidth integer representing the width of the created window.
+     * \param windowHeight integer representing the height of the created window.
+     * \param windowTitle constant reference to the title of the created window of type sf::String with a default value of "TTT".
+     * \param windowStyle unsigned 32-bit integer representing the style of the created window with a default value of "sf::Style::Default".
+     * \param windowContextSettings constant reference to the context settings of the created window of type sf::ContextSettings with a default value of "sf::ContextSettings()".
+     */
     Window::Window(int windowWidth, int windowHeight, const sf::String& windowTitle, uint32_t windowStyle, const sf::ContextSettings& windowContextSettings)
         : window(sf::VideoMode(windowWidth, windowHeight), windowTitle, windowStyle, windowContextSettings)
     {
@@ -32,9 +48,13 @@ namespace TTT
             defaultEventLoop();
     }
 
+    /** \brief The "Window" destructor does nothing except for logging that the window is being destroyed.
+     *
+     * The "Window" destructor does nothing because it is already done by SFML when using the "window.close()" function.
+     */
     Window::~Window() { Log::log(Log::WINDOW, Log::INFO, "Destroying window..."); }
 
-    // Will create a default immutable event loop.
+    /** Creates the default immutable event loop that can be turned on or off using a boolean called "shouldCreateDefaultEventLoop". */
     void Window::defaultEventLoop()
     {
         Log::log(Log::WINDOW, Log::INFO, "Creating default event loop...");
