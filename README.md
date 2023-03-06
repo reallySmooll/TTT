@@ -37,4 +37,4 @@ The latter commands will install the library system-wide so you can use it anywh
 Documentation is work in progress but you can already find it at https://reallysmooll.github.io/TTT.
 
 ## Third party projects used
-(Doxygen Awesome)[https://www.github.com/jothepro/doxygen-awesome-css] - jothepro
+[Doxygen Awesome](https://www.github.com/jothepro/doxygen-awesome-css) - jothepro

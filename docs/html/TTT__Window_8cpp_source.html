@@ -8,12 +8,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>TTT: src/TTT_Window.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript">var page_layout=1;</script>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-  DoxygenAwesomeDarkModeToggle.init()
+  DoxygenAwesomeInteractiveToc.hideMobileMenu = false;
+  DoxygenAwesomeDarkModeToggle.init();
+  DoxygenAwesomeInteractiveToc.init();
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
@@ -22,17 +24,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div id="side-nav" class="ui-resizable side-nav-resizable"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -41,21 +37,9 @@
   <td id="projectalign">
    <div id="projectname">TTT<span id="projectnumber">&#160;v1.0.0</span>
    </div>
-   <div id="projectbrief">TTT is a simple wrapper library around SFML made to simplify the making of an SFML game.</div>
+   <div id="projectbrief">TTT is a simple wrapper around the SFML library.</div>
   </td>
  </tr>
-   <tr><td colspan="2" id="searchbox_td">        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
-          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td></tr>
  </tbody>
 </table>
 </div>
@@ -66,7 +50,19 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
       <div id="nav-sync" class="sync"></div>
@@ -187,25 +183,25 @@ $(document).ready(function(){initNavTree('TTT__Window_8cpp_source.html',''); ini
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
 <div class="ttc" id="aTTT_8hpp_html"><div class="ttname"><a href="TTT_8hpp.html">TTT.hpp</a></div><div class="ttdoc">This is the header file and where everything is declared.</div></div>
 <div class="ttc" id="aclassTTT_1_1Log_html_a0311c315a9acf6611845c70ea99bf0c1"><div class="ttname"><a href="classTTT_1_1Log.html#a0311c315a9acf6611845c70ea99bf0c1">TTT::Log::log</a></div><div class="ttdeci">static void log(module module, level level, std::string message)</div><div class="ttdoc">Function to log the debug output to the terminal and/or the &quot;TTT.log&quot; file.</div><div class="ttdef"><b>Definition:</b> <a href="TTT__Log_8cpp_source.html#l00052">TTT_Log.cpp:52</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a80daf18656374865ce5790fdc9e1a115"><div class="ttname"><a href="classTTT_1_1Log.html#a80daf18656374865ce5790fdc9e1a115">TTT::Log::INFO</a></div><div class="ttdeci">static const level INFO</div><div class="ttdoc">Info level displays basic information.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00065">TTT.hpp:65</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_afe46f37b16dba30b17a148c9a745e4c6"><div class="ttname"><a href="classTTT_1_1Log.html#afe46f37b16dba30b17a148c9a745e4c6">TTT::Log::WINDOW</a></div><div class="ttdeci">static const module WINDOW</div><div class="ttdoc">Module used in logging everything that has to do with the window.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00059">TTT.hpp:59</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a80daf18656374865ce5790fdc9e1a115"><div class="ttname"><a href="classTTT_1_1Log.html#a80daf18656374865ce5790fdc9e1a115">TTT::Log::INFO</a></div><div class="ttdeci">static const level INFO</div><div class="ttdoc">Info level displays basic information.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00066">TTT.hpp:66</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_afe46f37b16dba30b17a148c9a745e4c6"><div class="ttname"><a href="classTTT_1_1Log.html#afe46f37b16dba30b17a148c9a745e4c6">TTT::Log::WINDOW</a></div><div class="ttdeci">static const module WINDOW</div><div class="ttdoc">Module used in logging everything that has to do with the window.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00060">TTT.hpp:60</a></div></div>
 <div class="ttc" id="aclassTTT_1_1Utils_html_a6f79832eff0547ce530e7cfa01e1678a"><div class="ttname"><a href="classTTT_1_1Utils.html#a6f79832eff0547ce530e7cfa01e1678a">TTT::Utils::showFPS</a></div><div class="ttdeci">static void showFPS(sf::RenderWindow &amp;window, const sf::Font &amp;font, unsigned int fontSize, sf::Color color=sf::Color::White)</div><div class="ttdoc">&quot;showFPS&quot; calculates and displays a nice FPS number when the &quot;F3&quot; key is pressed.</div><div class="ttdef"><b>Definition:</b> <a href="TTT__Utils_8cpp_source.html#l00033">TTT_Utils.cpp:33</a></div></div>
 <div class="ttc" id="aclassTTT_1_1Utils_html_ab7ec2c861efe0ecf196a560e87c16f13"><div class="ttname"><a href="classTTT_1_1Utils.html#ab7ec2c861efe0ecf196a560e87c16f13">TTT::Utils::createFont</a></div><div class="ttdeci">static sf::Font createFont(std::string filename)</div><div class="ttdoc">Function to create a font and load it. Shortens the amount of code that has to be written.</div><div class="ttdef"><b>Definition:</b> <a href="TTT__Utils_8cpp_source.html#l00081">TTT_Utils.cpp:81</a></div></div>
 <div class="ttc" id="aclassTTT_1_1Window_html_a1300af035571a024fc4fdd7ad90550f9"><div class="ttname"><a href="classTTT_1_1Window.html#a1300af035571a024fc4fdd7ad90550f9">TTT::Window::defaultEventLoop</a></div><div class="ttdeci">void defaultEventLoop()</div><div class="ttdoc">Creates the default immutable event loop.</div><div class="ttdef"><b>Definition:</b> <a href="TTT__Window_8cpp_source.html#l00058">TTT_Window.cpp:58</a></div></div>
 <div class="ttc" id="aclassTTT_1_1Window_html_a182735580dbe5ec194b833fe7cdda044"><div class="ttname"><a href="classTTT_1_1Window.html#a182735580dbe5ec194b833fe7cdda044">TTT::Window::Window</a></div><div class="ttdeci">Window(int windowWidth, int windowHeight, const sf::String &amp;windowTitle=&quot;TTT&quot;, uint32_t windowStyle=sf::Style::Default, const sf::ContextSettings &amp;windowContextSettings=sf::ContextSettings())</div><div class="ttdoc">The &quot;Window&quot; constructor used to create the window using sf::RenderWindow.</div><div class="ttdef"><b>Definition:</b> <a href="TTT__Window_8cpp_source.html#l00035">TTT_Window.cpp:35</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Window_html_a2566f26594cc6474ef07e34bf663d15a"><div class="ttname"><a href="classTTT_1_1Window.html#a2566f26594cc6474ef07e34bf663d15a">TTT::Window::window</a></div><div class="ttdeci">sf::RenderWindow window</div><div class="ttdoc">The &quot;window&quot; variable is initialized with the parameters of the &quot;Window&quot; constructor.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00031">TTT.hpp:31</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Window_html_a324563bc8d1f6106c433a56943c0f092"><div class="ttname"><a href="classTTT_1_1Window.html#a324563bc8d1f6106c433a56943c0f092">TTT::Window::toggleFPS</a></div><div class="ttdeci">static bool toggleFPS</div><div class="ttdoc">The user can choose whether to show the FPS at startup or require the &quot;F3&quot; key to be pressed to show ...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00034">TTT.hpp:34</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Window_html_a425dd801b07647d5a6a6790b2516943c"><div class="ttname"><a href="classTTT_1_1Window.html#a425dd801b07647d5a6a6790b2516943c">TTT::Window::shouldCreateDefaultEventLoop</a></div><div class="ttdeci">static bool shouldCreateDefaultEventLoop</div><div class="ttdoc">The user can choose whether to create a default immutable event loop or not.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00035">TTT.hpp:35</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Window_html_a2566f26594cc6474ef07e34bf663d15a"><div class="ttname"><a href="classTTT_1_1Window.html#a2566f26594cc6474ef07e34bf663d15a">TTT::Window::window</a></div><div class="ttdeci">sf::RenderWindow window</div><div class="ttdoc">The &quot;window&quot; variable is initialized with the parameters of the &quot;Window&quot; constructor.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00032">TTT.hpp:32</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Window_html_a324563bc8d1f6106c433a56943c0f092"><div class="ttname"><a href="classTTT_1_1Window.html#a324563bc8d1f6106c433a56943c0f092">TTT::Window::toggleFPS</a></div><div class="ttdeci">static bool toggleFPS</div><div class="ttdoc">The user can choose whether to show the FPS at startup or require the &quot;F3&quot; key to be pressed to show ...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00035">TTT.hpp:35</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Window_html_a425dd801b07647d5a6a6790b2516943c"><div class="ttname"><a href="classTTT_1_1Window.html#a425dd801b07647d5a6a6790b2516943c">TTT::Window::shouldCreateDefaultEventLoop</a></div><div class="ttdeci">static bool shouldCreateDefaultEventLoop</div><div class="ttdoc">The user can choose whether to create a default immutable event loop or not.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00036">TTT.hpp:36</a></div></div>
 <div class="ttc" id="aclassTTT_1_1Window_html_ab842a991144ae10bb4a8233eb8e9169a"><div class="ttname"><a href="classTTT_1_1Window.html#ab842a991144ae10bb4a8233eb8e9169a">TTT::Window::~Window</a></div><div class="ttdeci">~Window()</div><div class="ttdoc">The &quot;Window&quot; destructor does nothing except for logging that the window is being destroyed.</div><div class="ttdef"><b>Definition:</b> <a href="TTT__Window_8cpp_source.html#l00055">TTT_Window.cpp:55</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Window_html_ad350d516fc88f079054e877afdc3cdf2"><div class="ttname"><a href="classTTT_1_1Window.html#ad350d516fc88f079054e877afdc3cdf2">TTT::Window::verbose</a></div><div class="ttdeci">static bool verbose</div><div class="ttdoc">The user can choose whether to show the debug output in the terminal as well as log to a file called ...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00033">TTT.hpp:33</a></div></div>
-<div class="ttc" id="anamespaceTTT_html"><div class="ttname"><a href="namespaceTTT.html">TTT</a></div><div class="ttdoc">The TTT namespace, which includes everything in the library.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00015">TTT.hpp:16</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Window_html_ad350d516fc88f079054e877afdc3cdf2"><div class="ttname"><a href="classTTT_1_1Window.html#ad350d516fc88f079054e877afdc3cdf2">TTT::Window::verbose</a></div><div class="ttdeci">static bool verbose</div><div class="ttdoc">The user can choose whether to show the debug output in the terminal as well as log to a file called ...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00034">TTT.hpp:34</a></div></div>
+<div class="ttc" id="anamespaceTTT_html"><div class="ttname"><a href="namespaceTTT.html">TTT</a></div><div class="ttdoc">The TTT namespace, which includes everything in the library.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00016">TTT.hpp:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="TTT__Window_8cpp.html">TTT_Window.cpp</a></li>
-    <li class="footer">Generated on Mon Mar 6 2023 22:33:14 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Mon Mar 6 2023 23:36:38 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

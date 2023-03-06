@@ -8,12 +8,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>TTT: src/TTT_Log.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript">var page_layout=1;</script>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-  DoxygenAwesomeDarkModeToggle.init()
+  DoxygenAwesomeInteractiveToc.hideMobileMenu = false;
+  DoxygenAwesomeDarkModeToggle.init();
+  DoxygenAwesomeInteractiveToc.init();
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
@@ -22,17 +24,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div id="side-nav" class="ui-resizable side-nav-resizable"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -41,21 +37,9 @@
   <td id="projectalign">
    <div id="projectname">TTT<span id="projectnumber">&#160;v1.0.0</span>
    </div>
-   <div id="projectbrief">TTT is a simple wrapper library around SFML made to simplify the making of an SFML game.</div>
+   <div id="projectbrief">TTT is a simple wrapper around the SFML library.</div>
   </td>
  </tr>
-   <tr><td colspan="2" id="searchbox_td">        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
-          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td></tr>
  </tbody>
 </table>
 </div>
@@ -66,7 +50,19 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
       <div id="nav-sync" class="sync"></div>
@@ -174,36 +170,36 @@ $(document).ready(function(){initNavTree('TTT__Log_8cpp_source.html',''); initRe
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
 <div class="ttc" id="aTTT_8hpp_html"><div class="ttname"><a href="TTT_8hpp.html">TTT.hpp</a></div><div class="ttdoc">This is the header file and where everything is declared.</div></div>
 <div class="ttc" id="aclassTTT_1_1Log_html_a0311c315a9acf6611845c70ea99bf0c1"><div class="ttname"><a href="classTTT_1_1Log.html#a0311c315a9acf6611845c70ea99bf0c1">TTT::Log::log</a></div><div class="ttdeci">static void log(module module, level level, std::string message)</div><div class="ttdoc">Function to log the debug output to the terminal and/or the &quot;TTT.log&quot; file.</div><div class="ttdef"><b>Definition:</b> <a href="TTT__Log_8cpp_source.html#l00052">TTT_Log.cpp:52</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a14dc1174857354aeb652e122c454eca2"><div class="ttname"><a href="classTTT_1_1Log.html#a14dc1174857354aeb652e122c454eca2">TTT::Log::SUCCESS</a></div><div class="ttdeci">static const level SUCCESS</div><div class="ttdoc">Success level indicates that an operation was successful.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00064">TTT.hpp:64</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a2676bdb9cb7236780df8eb13e9efc283"><div class="ttname"><a href="classTTT_1_1Log.html#a2676bdb9cb7236780df8eb13e9efc283">TTT::Log::L_RED</a></div><div class="ttdeci">static const color L_RED</div><div class="ttdoc">Light red color paints output light red. Used in errors.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00074">TTT.hpp:74</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a3853de6cea58f0e47d14abc33ab10ad0"><div class="ttname"><a href="classTTT_1_1Log.html#a3853de6cea58f0e47d14abc33ab10ad0">TTT::Log::RED</a></div><div class="ttdeci">static const color RED</div><div class="ttdoc">Red color paints output red. Used in critical errors.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00071">TTT.hpp:71</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a3fc71d8a1456558c08ce7112025e9393"><div class="ttname"><a href="classTTT_1_1Log.html#a3fc71d8a1456558c08ce7112025e9393">TTT::Log::CRITICAL</a></div><div class="ttdeci">static const level CRITICAL</div><div class="ttdoc">Critical level indicates that there's something wrong with the program and requires immediate attenti...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00068">TTT.hpp:68</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a4c08290e90c45ea78e98face802f6ccb"><div class="ttname"><a href="classTTT_1_1Log.html#a4c08290e90c45ea78e98face802f6ccb">TTT::Log::WARNING</a></div><div class="ttdeci">static const level WARNING</div><div class="ttdoc">Warning level indicates that there's something wrong with the program but doesn't require immediate a...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00066">TTT.hpp:66</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a4c5168e8b73e2d972f92dab898f4427b"><div class="ttname"><a href="classTTT_1_1Log.html#a4c5168e8b73e2d972f92dab898f4427b">TTT::Log::ERROR</a></div><div class="ttdeci">static const level ERROR</div><div class="ttdoc">Error level indicates that there's something wrong with the program requires attention.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00067">TTT.hpp:67</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a6ac67b7b0cec950c5df84ae6e419a13a"><div class="ttname"><a href="classTTT_1_1Log.html#a6ac67b7b0cec950c5df84ae6e419a13a">TTT::Log::TTT</a></div><div class="ttdeci">static const module TTT</div><div class="ttdoc">Module used in the most critical of logs.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00057">TTT.hpp:57</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a6d90877a2fb0dd410431d1f1bac82819"><div class="ttname"><a href="classTTT_1_1Log.html#a6d90877a2fb0dd410431d1f1bac82819">TTT::Log::LOG</a></div><div class="ttdeci">static const module LOG</div><div class="ttdoc">Module used in logging everything that has to do with the logger class.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00061">TTT.hpp:61</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a7323243e549df878129b40be7163d2e7"><div class="ttname"><a href="classTTT_1_1Log.html#a7323243e549df878129b40be7163d2e7">TTT::Log::L_YELLOW</a></div><div class="ttdeci">static const color L_YELLOW</div><div class="ttdoc">Light yellow color paints output light yellow. used in warnings.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00075">TTT.hpp:75</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a78f383f4a375c137b9543238a4530623"><div class="ttname"><a href="classTTT_1_1Log.html#a78f383f4a375c137b9543238a4530623">TTT::Log::RESET</a></div><div class="ttdeci">static const color RESET</div><div class="ttdoc">Reset color resets all of the colors to the terminal default.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00070">TTT.hpp:70</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a80daf18656374865ce5790fdc9e1a115"><div class="ttname"><a href="classTTT_1_1Log.html#a80daf18656374865ce5790fdc9e1a115">TTT::Log::INFO</a></div><div class="ttdeci">static const level INFO</div><div class="ttdoc">Info level displays basic information.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00065">TTT.hpp:65</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_a99e9ff9768c16317074e3380c0893b27"><div class="ttname"><a href="classTTT_1_1Log.html#a99e9ff9768c16317074e3380c0893b27">TTT::Log::SFML</a></div><div class="ttdeci">static const module SFML</div><div class="ttdoc">Module used in logging everything that has to do with the SFML library.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00062">TTT.hpp:62</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_aac938554ea67a961e5c7680aa1e1d557"><div class="ttname"><a href="classTTT_1_1Log.html#aac938554ea67a961e5c7680aa1e1d557">TTT::Log::GREEN</a></div><div class="ttdeci">static const color GREEN</div><div class="ttdoc">Green color paints output green. Used when something is successful.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00072">TTT.hpp:72</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_ab29329ac16395bcf5349125c74d649e7"><div class="ttname"><a href="classTTT_1_1Log.html#ab29329ac16395bcf5349125c74d649e7">TTT::Log::UTILS</a></div><div class="ttdeci">static const module UTILS</div><div class="ttdoc">Module used in logging everything that has to do with the utilities class.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00060">TTT.hpp:60</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_afe46f37b16dba30b17a148c9a745e4c6"><div class="ttname"><a href="classTTT_1_1Log.html#afe46f37b16dba30b17a148c9a745e4c6">TTT::Log::WINDOW</a></div><div class="ttdeci">static const module WINDOW</div><div class="ttdoc">Module used in logging everything that has to do with the window.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00059">TTT.hpp:59</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Log_html_afeb8e9cb32e71f125f1b8e7828a401c6"><div class="ttname"><a href="classTTT_1_1Log.html#afeb8e9cb32e71f125f1b8e7828a401c6">TTT::Log::WHITE</a></div><div class="ttdeci">static const color WHITE</div><div class="ttdoc">White color paints output white. Used when displaying basic information.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00073">TTT.hpp:73</a></div></div>
-<div class="ttc" id="aclassTTT_1_1Window_html_ad350d516fc88f079054e877afdc3cdf2"><div class="ttname"><a href="classTTT_1_1Window.html#ad350d516fc88f079054e877afdc3cdf2">TTT::Window::verbose</a></div><div class="ttdeci">static bool verbose</div><div class="ttdoc">The user can choose whether to show the debug output in the terminal as well as log to a file called ...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00033">TTT.hpp:33</a></div></div>
-<div class="ttc" id="anamespaceTTT_html"><div class="ttname"><a href="namespaceTTT.html">TTT</a></div><div class="ttdoc">The TTT namespace, which includes everything in the library.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00015">TTT.hpp:16</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a14dc1174857354aeb652e122c454eca2"><div class="ttname"><a href="classTTT_1_1Log.html#a14dc1174857354aeb652e122c454eca2">TTT::Log::SUCCESS</a></div><div class="ttdeci">static const level SUCCESS</div><div class="ttdoc">Success level indicates that an operation was successful.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00065">TTT.hpp:65</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a2676bdb9cb7236780df8eb13e9efc283"><div class="ttname"><a href="classTTT_1_1Log.html#a2676bdb9cb7236780df8eb13e9efc283">TTT::Log::L_RED</a></div><div class="ttdeci">static const color L_RED</div><div class="ttdoc">Light red color paints output light red. Used in errors.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00075">TTT.hpp:75</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a3853de6cea58f0e47d14abc33ab10ad0"><div class="ttname"><a href="classTTT_1_1Log.html#a3853de6cea58f0e47d14abc33ab10ad0">TTT::Log::RED</a></div><div class="ttdeci">static const color RED</div><div class="ttdoc">Red color paints output red. Used in critical errors.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00072">TTT.hpp:72</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a3fc71d8a1456558c08ce7112025e9393"><div class="ttname"><a href="classTTT_1_1Log.html#a3fc71d8a1456558c08ce7112025e9393">TTT::Log::CRITICAL</a></div><div class="ttdeci">static const level CRITICAL</div><div class="ttdoc">Critical level indicates that there's something wrong with the program and requires immediate attenti...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00069">TTT.hpp:69</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a4c08290e90c45ea78e98face802f6ccb"><div class="ttname"><a href="classTTT_1_1Log.html#a4c08290e90c45ea78e98face802f6ccb">TTT::Log::WARNING</a></div><div class="ttdeci">static const level WARNING</div><div class="ttdoc">Warning level indicates that there's something wrong with the program but doesn't require immediate a...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00067">TTT.hpp:67</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a4c5168e8b73e2d972f92dab898f4427b"><div class="ttname"><a href="classTTT_1_1Log.html#a4c5168e8b73e2d972f92dab898f4427b">TTT::Log::ERROR</a></div><div class="ttdeci">static const level ERROR</div><div class="ttdoc">Error level indicates that there's something wrong with the program requires attention.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00068">TTT.hpp:68</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a6ac67b7b0cec950c5df84ae6e419a13a"><div class="ttname"><a href="classTTT_1_1Log.html#a6ac67b7b0cec950c5df84ae6e419a13a">TTT::Log::TTT</a></div><div class="ttdeci">static const module TTT</div><div class="ttdoc">Module used in the most critical of logs.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00058">TTT.hpp:58</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a6d90877a2fb0dd410431d1f1bac82819"><div class="ttname"><a href="classTTT_1_1Log.html#a6d90877a2fb0dd410431d1f1bac82819">TTT::Log::LOG</a></div><div class="ttdeci">static const module LOG</div><div class="ttdoc">Module used in logging everything that has to do with the logger class.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00062">TTT.hpp:62</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a7323243e549df878129b40be7163d2e7"><div class="ttname"><a href="classTTT_1_1Log.html#a7323243e549df878129b40be7163d2e7">TTT::Log::L_YELLOW</a></div><div class="ttdeci">static const color L_YELLOW</div><div class="ttdoc">Light yellow color paints output light yellow. used in warnings.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00076">TTT.hpp:76</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a78f383f4a375c137b9543238a4530623"><div class="ttname"><a href="classTTT_1_1Log.html#a78f383f4a375c137b9543238a4530623">TTT::Log::RESET</a></div><div class="ttdeci">static const color RESET</div><div class="ttdoc">Reset color resets all of the colors to the terminal default.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00071">TTT.hpp:71</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a80daf18656374865ce5790fdc9e1a115"><div class="ttname"><a href="classTTT_1_1Log.html#a80daf18656374865ce5790fdc9e1a115">TTT::Log::INFO</a></div><div class="ttdeci">static const level INFO</div><div class="ttdoc">Info level displays basic information.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00066">TTT.hpp:66</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_a99e9ff9768c16317074e3380c0893b27"><div class="ttname"><a href="classTTT_1_1Log.html#a99e9ff9768c16317074e3380c0893b27">TTT::Log::SFML</a></div><div class="ttdeci">static const module SFML</div><div class="ttdoc">Module used in logging everything that has to do with the SFML library.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00063">TTT.hpp:63</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_aac938554ea67a961e5c7680aa1e1d557"><div class="ttname"><a href="classTTT_1_1Log.html#aac938554ea67a961e5c7680aa1e1d557">TTT::Log::GREEN</a></div><div class="ttdeci">static const color GREEN</div><div class="ttdoc">Green color paints output green. Used when something is successful.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00073">TTT.hpp:73</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_ab29329ac16395bcf5349125c74d649e7"><div class="ttname"><a href="classTTT_1_1Log.html#ab29329ac16395bcf5349125c74d649e7">TTT::Log::UTILS</a></div><div class="ttdeci">static const module UTILS</div><div class="ttdoc">Module used in logging everything that has to do with the utilities class.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00061">TTT.hpp:61</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_afe46f37b16dba30b17a148c9a745e4c6"><div class="ttname"><a href="classTTT_1_1Log.html#afe46f37b16dba30b17a148c9a745e4c6">TTT::Log::WINDOW</a></div><div class="ttdeci">static const module WINDOW</div><div class="ttdoc">Module used in logging everything that has to do with the window.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00060">TTT.hpp:60</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Log_html_afeb8e9cb32e71f125f1b8e7828a401c6"><div class="ttname"><a href="classTTT_1_1Log.html#afeb8e9cb32e71f125f1b8e7828a401c6">TTT::Log::WHITE</a></div><div class="ttdeci">static const color WHITE</div><div class="ttdoc">White color paints output white. Used when displaying basic information.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00074">TTT.hpp:74</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Window_html_ad350d516fc88f079054e877afdc3cdf2"><div class="ttname"><a href="classTTT_1_1Window.html#ad350d516fc88f079054e877afdc3cdf2">TTT::Window::verbose</a></div><div class="ttdeci">static bool verbose</div><div class="ttdoc">The user can choose whether to show the debug output in the terminal as well as log to a file called ...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00034">TTT.hpp:34</a></div></div>
+<div class="ttc" id="anamespaceTTT_html"><div class="ttname"><a href="namespaceTTT.html">TTT</a></div><div class="ttdoc">The TTT namespace, which includes everything in the library.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00016">TTT.hpp:17</a></div></div>
 <div class="ttc" id="anamespaceTTT_html_a66d419f95a0ab6f0f9415ce02e93e6a1"><div class="ttname"><a href="namespaceTTT.html#a66d419f95a0ab6f0f9415ce02e93e6a1">TTT::currentTime</a></div><div class="ttdeci">const std::string currentTime()</div><div class="ttdef"><b>Definition:</b> <a href="TTT__Log_8cpp_source.html#l00032">TTT_Log.cpp:32</a></div></div>
-<div class="ttc" id="anamespaceTTT_html_a901999f31041ae34761c0111b5a5cd96"><div class="ttname"><a href="namespaceTTT.html#a901999f31041ae34761c0111b5a5cd96">TTT::module</a></div><div class="ttdeci">std::string module</div><div class="ttdoc">Type definition for different modules.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00017">TTT.hpp:17</a></div></div>
+<div class="ttc" id="anamespaceTTT_html_a901999f31041ae34761c0111b5a5cd96"><div class="ttname"><a href="namespaceTTT.html#a901999f31041ae34761c0111b5a5cd96">TTT::module</a></div><div class="ttdeci">std::string module</div><div class="ttdoc">Type definition for different modules.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00018">TTT.hpp:18</a></div></div>
 <div class="ttc" id="anamespaceTTT_html_aabb17bb1b86fdf477a9f45af0bdc9330"><div class="ttname"><a href="namespaceTTT.html#aabb17bb1b86fdf477a9f45af0bdc9330">TTT::logFile</a></div><div class="ttdeci">std::fstream logFile</div><div class="ttdef"><b>Definition:</b> <a href="TTT__Log_8cpp_source.html#l00044">TTT_Log.cpp:44</a></div></div>
-<div class="ttc" id="anamespaceTTT_html_aeae6359052c3a3ff5523b3aaacd9b053"><div class="ttname"><a href="namespaceTTT.html#aeae6359052c3a3ff5523b3aaacd9b053">TTT::color</a></div><div class="ttdeci">std::string color</div><div class="ttdoc">Type definition for different colors.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00019">TTT.hpp:19</a></div></div>
-<div class="ttc" id="anamespaceTTT_html_afedc0269ad11c78172fb609268de5b35"><div class="ttname"><a href="namespaceTTT.html#afedc0269ad11c78172fb609268de5b35">TTT::level</a></div><div class="ttdeci">std::string level</div><div class="ttdoc">Type definition for different levels.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00018">TTT.hpp:18</a></div></div>
+<div class="ttc" id="anamespaceTTT_html_aeae6359052c3a3ff5523b3aaacd9b053"><div class="ttname"><a href="namespaceTTT.html#aeae6359052c3a3ff5523b3aaacd9b053">TTT::color</a></div><div class="ttdeci">std::string color</div><div class="ttdoc">Type definition for different colors.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00020">TTT.hpp:20</a></div></div>
+<div class="ttc" id="anamespaceTTT_html_afedc0269ad11c78172fb609268de5b35"><div class="ttname"><a href="namespaceTTT.html#afedc0269ad11c78172fb609268de5b35">TTT::level</a></div><div class="ttdeci">std::string level</div><div class="ttdoc">Type definition for different levels.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00019">TTT.hpp:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="TTT__Log_8cpp.html">TTT_Log.cpp</a></li>
-    <li class="footer">Generated on Mon Mar 6 2023 22:33:14 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Mon Mar 6 2023 23:36:38 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

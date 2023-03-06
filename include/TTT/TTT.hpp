@@ -1,5 +1,6 @@
 /** \file TTT.hpp
  * \brief This is the header file and where everything is declared.
+ * \tableofcontents
  */
 
 #ifndef TTT_HPP

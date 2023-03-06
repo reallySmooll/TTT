@@ -17,8 +17,12 @@
 <script type="text/javascript" src="$relpath^jquery.js"></script>
 <script type="text/javascript" src="$relpath^dynsections.js"></script>
 <script type="text/javascript" src="$relpath^doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="$relpath^doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-  DoxygenAwesomeDarkModeToggle.init()
+  DoxygenAwesomeInteractiveToc.hideMobileMenu = false;
+
+  DoxygenAwesomeDarkModeToggle.init();
+  DoxygenAwesomeInteractiveToc.init();
 </script>
 $treeview
 $search
