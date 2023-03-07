@@ -28,13 +28,15 @@ namespace TTT
             Window(int windowWidth, int windowHeight, const sf::String& windowTitle="TTT", uint32_t windowStyle=sf::Style::Default, const sf::ContextSettings& windowContextSettings=sf::ContextSettings());
             ~Window();
 
-            sf::RenderWindow window;                  ///< The "window" variable is initialized with the parameters of the "Window" constructor.
+            sf::RenderWindow window;                         ///< The "window" variable is initialized with the parameters of the "Window" constructor.
 
-            static bool verbose;                      ///< The user can choose whether to show the debug output in the terminal as well as log to a file called "TTT.log" or just log to the file.
-            static bool toggleFPS;                    ///< The user can choose whether to show the FPS at startup or require the "F3" key to be pressed to show it.
-            static bool shouldCreateDefaultEventLoop; ///< The user can choose whether to create a default immutable event loop or not.
+            static bool verbose;                             ///< The user can choose whether to show the debug output in the terminal as well as log to a file called "TTT.log" or just log to the file.
+            static bool toggleFPS;                           ///< The user can choose whether to show the FPS at startup or require the "F3" key to be pressed to show it.
+            static bool shouldCreateDefaultEventLoop;        ///< The user can choose whether to create a default immutable event loop or not.
+
+            static std::string defaultEventLoopFontFilename; ///< Optional variable for setting default event loop font path.
         private:
-            void defaultEventLoop();                  ///< Creates the default immutable event loop.
+            void defaultEventLoop();                         ///< Creates the default immutable event loop.
     };
 
     /** \brief Utilities class for smaller and miscellaneous functions like the "showFPS" one. */

@@ -24,6 +24,9 @@ namespace TTT
      */
     bool Window::shouldCreateDefaultEventLoop;
 
+    /** If left untouched, the variable will be set to a default value of "resources/fonts/04B_30__.TTF". */
+    std::string Window::defaultEventLoopFontFilename = "resources/fonts/04B_30__.TTF";
+
     /** \brief The "Window" constructor used to create the window using sf::RenderWindow.
      *
      * \param windowWidth integer representing the width of the created window.
@@ -61,7 +64,7 @@ namespace TTT
 
         window.setFramerateLimit(60);
 
-        sf::Font font = Utils::createFont("resources/fonts/04B_30__.TTF");
+        sf::Font font = Utils::createFont(defaultEventLoopFontFilename);
 
         sf::Text text;
         text.setFont(font);
