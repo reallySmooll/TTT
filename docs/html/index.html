@@ -109,23 +109,23 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md4">TTT</a><ul><li class="level2"><a href="#autotoc_md5">Building</a><ul><li class="level3"><a href="#autotoc_md6">Dependencies</a></li>
-<li class="level3"><a href="#autotoc_md7">Actually building</a></li>
+<ul><li class="level1"><a href="#autotoc_md2">TTT</a><ul><li class="level2"><a href="#autotoc_md4">Building</a><ul><li class="level3"><a href="#autotoc_md5">Dependencies</a></li>
+<li class="level3"><a href="#autotoc_md6">Actually building</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md8">Usage</a></li>
-<li class="level2"><a href="#autotoc_md9">Documentation</a></li>
+<li class="level2"><a href="#autotoc_md7">Usage</a></li>
+<li class="level2"><a href="#autotoc_md8">Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="textblock"><h1><a class="anchor" id="autotoc_md4"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md2"></a>
 TTT</h1>
 <p>TTT is a simple wrapper library around SFML made to simplify the making of an SFML game.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Building</h2>
 <p><b>NOTE: To build on Windows or macOS, you will need to check the meson documentation by yourself. Maybe I'll consider doing that but that's a project for another day.</b></p>
-<h3><a class="anchor" id="autotoc_md6"></a>
+<h3><a class="anchor" id="autotoc_md5"></a>
 Dependencies</h3>
 <p>Like with any project, there will always be some dependencies (no exceptions), this project has them:</p>
 <ul>
@@ -136,7 +136,7 @@ Dependencies</h3>
 <li>A C++ compiler</li>
 <li>pkg-conf</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md7"></a>
+<h3><a class="anchor" id="autotoc_md6"></a>
 Actually building</h3>
 <p>4 commands, not much else if you have all of the needed dependencies.</p>
 <div class="fragment"><div class="line">$ git clone https://github.com/reallySmooll/TTT.git</div>
@@ -147,7 +147,7 @@ Actually building</h3>
 <div class="fragment"><div class="line">$ sudo meson install -C build</div>
 <div class="line">$ sudo mv /usr/local/lib/pkgconfig/TTT.pc /usr/lib/pkgconfig/</div>
 </div><!-- fragment --><p>The latter commands will install the library system-wide so you can use it anywhere without having to keep a <code>.a</code> file in your <code>lib</code> folder.</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Usage</h2>
 <p>A basic setup looks something like this (main.cpp):</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="TTT_8hpp.html">TTT/TTT.hpp</a>&gt;</span></div>
@@ -176,7 +176,7 @@ Usage</h2>
 <div class="ttc" id="aclassTTT_1_1Window_html_a425dd801b07647d5a6a6790b2516943c"><div class="ttname"><a href="classTTT_1_1Window.html#a425dd801b07647d5a6a6790b2516943c">TTT::Window::shouldCreateDefaultEventLoop</a></div><div class="ttdeci">static bool shouldCreateDefaultEventLoop</div><div class="ttdoc">The user can choose whether to create a default immutable event loop or not.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00035">TTT.hpp:35</a></div></div>
 <div class="ttc" id="aclassTTT_1_1Window_html_aafcd7d74ddca505fe5976abcf81b29d8"><div class="ttname"><a href="classTTT_1_1Window.html#aafcd7d74ddca505fe5976abcf81b29d8">TTT::Window::defaultEventLoopFontFilename</a></div><div class="ttdeci">static std::string defaultEventLoopFontFilename</div><div class="ttdoc">Optional variable for setting default event loop font path.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00037">TTT.hpp:37</a></div></div>
 <div class="ttc" id="aclassTTT_1_1Window_html_ad350d516fc88f079054e877afdc3cdf2"><div class="ttname"><a href="classTTT_1_1Window.html#ad350d516fc88f079054e877afdc3cdf2">TTT::Window::verbose</a></div><div class="ttdeci">static bool verbose</div><div class="ttdoc">The user can choose whether to show the debug output in the terminal as well as log to a file called ...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00033">TTT.hpp:33</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md9"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
 Documentation</h2>
 <p>Documentation is work in progress but you can already find it at <a href="https://reallysmooll.github.io/TTT-docs">https://reallysmooll.github.io/TTT-docs</a>. </p>
 </div></div><!-- PageDoc -->
@@ -185,7 +185,7 @@ Documentation</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 7 2023 23:55:57 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 23:59:52 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>
