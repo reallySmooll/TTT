@@ -1,3 +1,6 @@
+\mainpage
+\tableofcontents
+
 # TTT
 TTT is a simple wrapper library around SFML made to simplify the making of an SFML game.
 
