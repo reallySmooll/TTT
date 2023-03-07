@@ -1,0 +1,191 @@
+\hypertarget{classTTT_1_1Window}{}\doxysection{TTT\+::Window Class Reference}
+\label{classTTT_1_1Window}\index{TTT::Window@{TTT::Window}}
+
+
+The \char`\"{}\+Window\char`\"{} class initializes the window and everything else (like the default event loop).  
+
+
+
+
+{\ttfamily \#include \char`\"{}TTT.\+hpp\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTTT_1_1Window_a182735580dbe5ec194b833fe7cdda044}{Window}} (int window\+Width, int window\+Height, const sf\+::\+String \&window\+Title=\char`\"{}TTT\char`\"{}, uint32\+\_\+t window\+Style=sf\+::\+Style\+::\+Default, const sf\+::\+Context\+Settings \&window\+Context\+Settings=sf\+::\+Context\+Settings())
+\begin{DoxyCompactList}\small\item\em The \char`\"{}\+Window\char`\"{} constructor used to create the window using sf\+::\+Render\+Window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTTT_1_1Window_ab842a991144ae10bb4a8233eb8e9169a}{$\sim$\+Window}} ()
+\begin{DoxyCompactList}\small\item\em The \char`\"{}\+Window\char`\"{} destructor does nothing except for logging that the window is being destroyed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window \mbox{\hyperlink{classTTT_1_1Window_a2566f26594cc6474ef07e34bf663d15a}{window}}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}window\char`\"{} variable is initialized with the parameters of the \char`\"{}\+Window\char`\"{} constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classTTT_1_1Window_ad350d516fc88f079054e877afdc3cdf2}{verbose}}
+\begin{DoxyCompactList}\small\item\em The user can choose whether to show the debug output in the terminal as well as log to a file called \char`\"{}\+TTT.\+log\char`\"{} or just log to the file. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classTTT_1_1Window_a324563bc8d1f6106c433a56943c0f092}{toggle\+FPS}}
+\begin{DoxyCompactList}\small\item\em The user can choose whether to show the FPS at startup or require the \char`\"{}\+F3\char`\"{} key to be pressed to show it. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classTTT_1_1Window_a425dd801b07647d5a6a6790b2516943c}{should\+Create\+Default\+Event\+Loop}}
+\begin{DoxyCompactList}\small\item\em The user can choose whether to create a default immutable event loop or not. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classTTT_1_1Window_aafcd7d74ddca505fe5976abcf81b29d8}{default\+Event\+Loop\+Font\+Filename}} = \char`\"{}resources/fonts/04B\+\_\+30\+\_\+\+\_\+.\+TTF\char`\"{}
+\begin{DoxyCompactList}\small\item\em Optional variable for setting default event loop font path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTTT_1_1Window_a1300af035571a024fc4fdd7ad90550f9}{default\+Event\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Creates the default immutable event loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \char`\"{}\+Window\char`\"{} class initializes the window and everything else (like the default event loop). 
+
+The class is initialized using a \char`\"{}\+Window\char`\"{} constructor that takes parameters similar to the parameters of the sf\+::\+Render\+Window class constructor. 
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00025}{25}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTTT_1_1Window_a182735580dbe5ec194b833fe7cdda044}\label{classTTT_1_1Window_a182735580dbe5ec194b833fe7cdda044}} 
+\index{TTT::Window@{TTT::Window}!Window@{Window}}
+\index{Window@{Window}!TTT::Window@{TTT::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily TTT\+::\+Window\+::\+Window (\begin{DoxyParamCaption}\item[{int}]{window\+Width,  }\item[{int}]{window\+Height,  }\item[{const sf\+::\+String \&}]{window\+Title = {\ttfamily \char`\"{}TTT\char`\"{}},  }\item[{uint32\+\_\+t}]{window\+Style = {\ttfamily sf\+:\+:Style\+:\+:Default},  }\item[{const sf\+::\+Context\+Settings \&}]{window\+Context\+Settings = {\ttfamily sf\+:\+:ContextSettings()} }\end{DoxyParamCaption})}
+
+
+
+The \char`\"{}\+Window\char`\"{} constructor used to create the window using sf\+::\+Render\+Window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Width} & integer representing the width of the created window. \\
+\hline
+{\em window\+Height} & integer representing the height of the created window. \\
+\hline
+{\em window\+Title} & constant reference to the title of the created window of type sf\+::\+String with a default value of \char`\"{}\+TTT\char`\"{}. \\
+\hline
+{\em window\+Style} & unsigned 32-\/bit integer representing the style of the created window with a default value of \char`\"{}sf\+::\+Style\+::\+Default\char`\"{}. \\
+\hline
+{\em window\+Context\+Settings} & constant reference to the context settings of the created window of type sf\+::\+Context\+Settings with a default value of \char`\"{}sf\+::\+Context\+Settings()\char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{TTT__Window_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{TTT__Window_8cpp_source}{TTT\+\_\+\+Window.\+cpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Window_ab842a991144ae10bb4a8233eb8e9169a}\label{classTTT_1_1Window_ab842a991144ae10bb4a8233eb8e9169a}} 
+\index{TTT::Window@{TTT::Window}!````~Window@{$\sim$Window}}
+\index{````~Window@{$\sim$Window}!TTT::Window@{TTT::Window}}
+\doxysubsubsection{\texorpdfstring{$\sim$Window()}{~Window()}}
+{\footnotesize\ttfamily TTT\+::\+Window\+::$\sim$\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The \char`\"{}\+Window\char`\"{} destructor does nothing except for logging that the window is being destroyed. 
+
+The \char`\"{}\+Window\char`\"{} destructor does nothing because it is already done by SFML when using the \char`\"{}window.\+close()\char`\"{} function. 
+
+Definition at line \mbox{\hyperlink{TTT__Window_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{TTT__Window_8cpp_source}{TTT\+\_\+\+Window.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTTT_1_1Window_a1300af035571a024fc4fdd7ad90550f9}\label{classTTT_1_1Window_a1300af035571a024fc4fdd7ad90550f9}} 
+\index{TTT::Window@{TTT::Window}!defaultEventLoop@{defaultEventLoop}}
+\index{defaultEventLoop@{defaultEventLoop}!TTT::Window@{TTT::Window}}
+\doxysubsubsection{\texorpdfstring{defaultEventLoop()}{defaultEventLoop()}}
+{\footnotesize\ttfamily void TTT\+::\+Window\+::default\+Event\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates the default immutable event loop. 
+
+Creates the default immutable event loop that can be turned on or off using a boolean called \char`\"{}should\+Create\+Default\+Event\+Loop\char`\"{}. 
+
+Definition at line \mbox{\hyperlink{TTT__Window_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{TTT__Window_8cpp_source}{TTT\+\_\+\+Window.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTTT_1_1Window_aafcd7d74ddca505fe5976abcf81b29d8}\label{classTTT_1_1Window_aafcd7d74ddca505fe5976abcf81b29d8}} 
+\index{TTT::Window@{TTT::Window}!defaultEventLoopFontFilename@{defaultEventLoopFontFilename}}
+\index{defaultEventLoopFontFilename@{defaultEventLoopFontFilename}!TTT::Window@{TTT::Window}}
+\doxysubsubsection{\texorpdfstring{defaultEventLoopFontFilename}{defaultEventLoopFontFilename}}
+{\footnotesize\ttfamily std\+::string TTT\+::\+Window\+::default\+Event\+Loop\+Font\+Filename = \char`\"{}resources/fonts/04B\+\_\+30\+\_\+\+\_\+.\+TTF\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Optional variable for setting default event loop font path. 
+
+If left untouched, the variable will be set to a default value of \char`\"{}resources/fonts/04\+B\+\_\+30\+\_\+\+\_\+.\+TTF\char`\"{}. 
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00037}{37}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Window_a425dd801b07647d5a6a6790b2516943c}\label{classTTT_1_1Window_a425dd801b07647d5a6a6790b2516943c}} 
+\index{TTT::Window@{TTT::Window}!shouldCreateDefaultEventLoop@{shouldCreateDefaultEventLoop}}
+\index{shouldCreateDefaultEventLoop@{shouldCreateDefaultEventLoop}!TTT::Window@{TTT::Window}}
+\doxysubsubsection{\texorpdfstring{shouldCreateDefaultEventLoop}{shouldCreateDefaultEventLoop}}
+{\footnotesize\ttfamily bool TTT\+::\+Window\+::should\+Create\+Default\+Event\+Loop\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The user can choose whether to create a default immutable event loop or not. 
+
+If true, creates a default immutable event loop.~\newline
+If false, does not create a default immutable event loop. 
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00035}{35}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Window_a324563bc8d1f6106c433a56943c0f092}\label{classTTT_1_1Window_a324563bc8d1f6106c433a56943c0f092}} 
+\index{TTT::Window@{TTT::Window}!toggleFPS@{toggleFPS}}
+\index{toggleFPS@{toggleFPS}!TTT::Window@{TTT::Window}}
+\doxysubsubsection{\texorpdfstring{toggleFPS}{toggleFPS}}
+{\footnotesize\ttfamily bool TTT\+::\+Window\+::toggle\+FPS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The user can choose whether to show the FPS at startup or require the \char`\"{}\+F3\char`\"{} key to be pressed to show it. 
+
+If true, the FPS will be shown at startup.~\newline
+If false, to show the FPS, the user will need to press the \char`\"{}\+F3\char`\"{} key. 
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00034}{34}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Window_ad350d516fc88f079054e877afdc3cdf2}\label{classTTT_1_1Window_ad350d516fc88f079054e877afdc3cdf2}} 
+\index{TTT::Window@{TTT::Window}!verbose@{verbose}}
+\index{verbose@{verbose}!TTT::Window@{TTT::Window}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily bool TTT\+::\+Window\+::verbose\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The user can choose whether to show the debug output in the terminal as well as log to a file called \char`\"{}\+TTT.\+log\char`\"{} or just log to the file. 
+
+If true, displays debug output of the library as well as logs them to a file called \char`\"{}\+TTT.\+log\char`\"{}.~\newline
+If false, does not display debug output of the library but logs them to a file called \char`\"{}\+TTT.\+log\char`\"{}. 
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00033}{33}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Window_a2566f26594cc6474ef07e34bf663d15a}\label{classTTT_1_1Window_a2566f26594cc6474ef07e34bf663d15a}} 
+\index{TTT::Window@{TTT::Window}!window@{window}}
+\index{window@{window}!TTT::Window@{TTT::Window}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window TTT\+::\+Window\+::window}
+
+
+
+The \char`\"{}window\char`\"{} variable is initialized with the parameters of the \char`\"{}\+Window\char`\"{} constructor. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00031}{31}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+TTT/\mbox{\hyperlink{TTT_8hpp}{TTT.\+hpp}}\item 
+src/\mbox{\hyperlink{TTT__Window_8cpp}{TTT\+\_\+\+Window.\+cpp}}\end{DoxyCompactItemize}

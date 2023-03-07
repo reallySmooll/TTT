@@ -1,0 +1,317 @@
+\hypertarget{classTTT_1_1Log}{}\doxysection{TTT\+::Log Class Reference}
+\label{classTTT_1_1Log}\index{TTT::Log@{TTT::Log}}
+
+
+Logger class not really meant to be used outside of the library.  
+
+
+
+
+{\ttfamily \#include \char`\"{}TTT.\+hpp\char`\"{}}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classTTT_1_1Log_a0311c315a9acf6611845c70ea99bf0c1}{log}} (\mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}}, \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}}, std\+::string message)
+\begin{DoxyCompactList}\small\item\em Function to log the debug output to the terminal and/or the \char`\"{}\+TTT.\+log\char`\"{} file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} \mbox{\hyperlink{classTTT_1_1Log_a6ac67b7b0cec950c5df84ae6e419a13a}{TTT}} = \char`\"{}TTT\char`\"{}
+\begin{DoxyCompactList}\small\item\em Module used in the most critical of logs. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} \mbox{\hyperlink{classTTT_1_1Log_afe46f37b16dba30b17a148c9a745e4c6}{WINDOW}} = \char`\"{}WINDOW\char`\"{}
+\begin{DoxyCompactList}\small\item\em Module used in logging everything that has to do with the window. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} \mbox{\hyperlink{classTTT_1_1Log_ab29329ac16395bcf5349125c74d649e7}{UTILS}} = \char`\"{}UTILS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Module used in logging everything that has to do with the utilities class. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} \mbox{\hyperlink{classTTT_1_1Log_a6d90877a2fb0dd410431d1f1bac82819}{LOG}} = \char`\"{}LOG\char`\"{}
+\begin{DoxyCompactList}\small\item\em Module used in logging everything that has to do with the logger class. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} \mbox{\hyperlink{classTTT_1_1Log_a99e9ff9768c16317074e3380c0893b27}{SFML}} = \char`\"{}SFML\char`\"{}
+\begin{DoxyCompactList}\small\item\em Module used in logging everything that has to do with the SFML library. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} \mbox{\hyperlink{classTTT_1_1Log_a14dc1174857354aeb652e122c454eca2}{SUCCESS}} = \char`\"{}SUCCESS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Success level indicates that an operation was successful. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} \mbox{\hyperlink{classTTT_1_1Log_a80daf18656374865ce5790fdc9e1a115}{INFO}} = \char`\"{}INFO\char`\"{}
+\begin{DoxyCompactList}\small\item\em Info level displays basic information. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} \mbox{\hyperlink{classTTT_1_1Log_a4c08290e90c45ea78e98face802f6ccb}{WARNING}} = \char`\"{}WARNING\char`\"{}
+\begin{DoxyCompactList}\small\item\em Warning level indicates that there\textquotesingle{}s something wrong with the program but doesn\textquotesingle{}t require immediate attention. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} \mbox{\hyperlink{classTTT_1_1Log_a4c5168e8b73e2d972f92dab898f4427b}{ERROR}} = \char`\"{}ERROR\char`\"{}
+\begin{DoxyCompactList}\small\item\em Error level indicates that there\textquotesingle{}s something wrong with the program requires attention. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} \mbox{\hyperlink{classTTT_1_1Log_a3fc71d8a1456558c08ce7112025e9393}{CRITICAL}} = \char`\"{}CRITICAL\char`\"{}
+\begin{DoxyCompactList}\small\item\em Critical level indicates that there\textquotesingle{}s something wrong with the program and requires immediate attention. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} \mbox{\hyperlink{classTTT_1_1Log_a78f383f4a375c137b9543238a4530623}{RESET}} = \char`\"{}\textbackslash{}033\mbox{[}0m\char`\"{}
+\begin{DoxyCompactList}\small\item\em Reset color resets all of the colors to the terminal default. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} \mbox{\hyperlink{classTTT_1_1Log_a3853de6cea58f0e47d14abc33ab10ad0}{RED}} = \char`\"{}\textbackslash{}033\mbox{[}31m\char`\"{}
+\begin{DoxyCompactList}\small\item\em Red color paints output red. Used in critical errors. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} \mbox{\hyperlink{classTTT_1_1Log_aac938554ea67a961e5c7680aa1e1d557}{GREEN}} = \char`\"{}\textbackslash{}033\mbox{[}32m\char`\"{}
+\begin{DoxyCompactList}\small\item\em Green color paints output green. Used when something is successful. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} \mbox{\hyperlink{classTTT_1_1Log_afeb8e9cb32e71f125f1b8e7828a401c6}{WHITE}} = \char`\"{}\textbackslash{}033\mbox{[}37m\char`\"{}
+\begin{DoxyCompactList}\small\item\em White color paints output white. Used when displaying basic information. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} \mbox{\hyperlink{classTTT_1_1Log_a2676bdb9cb7236780df8eb13e9efc283}{L\+\_\+\+RED}} = \char`\"{}\textbackslash{}033\mbox{[}91m\char`\"{}
+\begin{DoxyCompactList}\small\item\em Light red color paints output light red. Used in errors. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} \mbox{\hyperlink{classTTT_1_1Log_a7323243e549df878129b40be7163d2e7}{L\+\_\+\+YELLOW}} = \char`\"{}\textbackslash{}033\mbox{[}93m\char`\"{}
+\begin{DoxyCompactList}\small\item\em Light yellow color paints output light yellow. used in warnings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Logger class not really meant to be used outside of the library. 
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00054}{54}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTTT_1_1Log_a0311c315a9acf6611845c70ea99bf0c1}\label{classTTT_1_1Log_a0311c315a9acf6611845c70ea99bf0c1}} 
+\index{TTT::Log@{TTT::Log}!log@{log}}
+\index{log@{log}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void TTT\+::\+Log\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}}}]{module,  }\item[{\mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}}}]{level,  }\item[{std\+::string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Function to log the debug output to the terminal and/or the \char`\"{}\+TTT.\+log\char`\"{} file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & module representing the file or library the info/error/success was noted in. \\
+\hline
+{\em level} & level representing the level of severity that was logged. \\
+\hline
+{\em message} & a string representing the message associated with the log. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{TTT__Log_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{TTT__Log_8cpp_source}{TTT\+\_\+\+Log.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTTT_1_1Log_a3fc71d8a1456558c08ce7112025e9393}\label{classTTT_1_1Log_a3fc71d8a1456558c08ce7112025e9393}} 
+\index{TTT::Log@{TTT::Log}!CRITICAL@{CRITICAL}}
+\index{CRITICAL@{CRITICAL}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{CRITICAL}{CRITICAL}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} TTT\+::\+Log\+::\+CRITICAL = \char`\"{}CRITICAL\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Critical level indicates that there\textquotesingle{}s something wrong with the program and requires immediate attention. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00070}{70}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a4c5168e8b73e2d972f92dab898f4427b}\label{classTTT_1_1Log_a4c5168e8b73e2d972f92dab898f4427b}} 
+\index{TTT::Log@{TTT::Log}!ERROR@{ERROR}}
+\index{ERROR@{ERROR}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{ERROR}{ERROR}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} TTT\+::\+Log\+::\+ERROR = \char`\"{}ERROR\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Error level indicates that there\textquotesingle{}s something wrong with the program requires attention. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00069}{69}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_aac938554ea67a961e5c7680aa1e1d557}\label{classTTT_1_1Log_aac938554ea67a961e5c7680aa1e1d557}} 
+\index{TTT::Log@{TTT::Log}!GREEN@{GREEN}}
+\index{GREEN@{GREEN}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{GREEN}{GREEN}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} TTT\+::\+Log\+::\+GREEN = \char`\"{}\textbackslash{}033\mbox{[}32m\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Green color paints output green. Used when something is successful. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00074}{74}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a80daf18656374865ce5790fdc9e1a115}\label{classTTT_1_1Log_a80daf18656374865ce5790fdc9e1a115}} 
+\index{TTT::Log@{TTT::Log}!INFO@{INFO}}
+\index{INFO@{INFO}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{INFO}{INFO}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} TTT\+::\+Log\+::\+INFO = \char`\"{}INFO\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Info level displays basic information. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00067}{67}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a2676bdb9cb7236780df8eb13e9efc283}\label{classTTT_1_1Log_a2676bdb9cb7236780df8eb13e9efc283}} 
+\index{TTT::Log@{TTT::Log}!L\_RED@{L\_RED}}
+\index{L\_RED@{L\_RED}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{L\_RED}{L\_RED}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} TTT\+::\+Log\+::\+L\+\_\+\+RED = \char`\"{}\textbackslash{}033\mbox{[}91m\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Light red color paints output light red. Used in errors. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00076}{76}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a7323243e549df878129b40be7163d2e7}\label{classTTT_1_1Log_a7323243e549df878129b40be7163d2e7}} 
+\index{TTT::Log@{TTT::Log}!L\_YELLOW@{L\_YELLOW}}
+\index{L\_YELLOW@{L\_YELLOW}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{L\_YELLOW}{L\_YELLOW}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} TTT\+::\+Log\+::\+L\+\_\+\+YELLOW = \char`\"{}\textbackslash{}033\mbox{[}93m\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Light yellow color paints output light yellow. used in warnings. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00077}{77}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a6d90877a2fb0dd410431d1f1bac82819}\label{classTTT_1_1Log_a6d90877a2fb0dd410431d1f1bac82819}} 
+\index{TTT::Log@{TTT::Log}!LOG@{LOG}}
+\index{LOG@{LOG}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{LOG}{LOG}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} TTT\+::\+Log\+::\+LOG = \char`\"{}LOG\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Module used in logging everything that has to do with the logger class. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00063}{63}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a3853de6cea58f0e47d14abc33ab10ad0}\label{classTTT_1_1Log_a3853de6cea58f0e47d14abc33ab10ad0}} 
+\index{TTT::Log@{TTT::Log}!RED@{RED}}
+\index{RED@{RED}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{RED}{RED}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} TTT\+::\+Log\+::\+RED = \char`\"{}\textbackslash{}033\mbox{[}31m\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Red color paints output red. Used in critical errors. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00073}{73}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a78f383f4a375c137b9543238a4530623}\label{classTTT_1_1Log_a78f383f4a375c137b9543238a4530623}} 
+\index{TTT::Log@{TTT::Log}!RESET@{RESET}}
+\index{RESET@{RESET}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{RESET}{RESET}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} TTT\+::\+Log\+::\+RESET = \char`\"{}\textbackslash{}033\mbox{[}0m\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reset color resets all of the colors to the terminal default. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00072}{72}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a99e9ff9768c16317074e3380c0893b27}\label{classTTT_1_1Log_a99e9ff9768c16317074e3380c0893b27}} 
+\index{TTT::Log@{TTT::Log}!SFML@{SFML}}
+\index{SFML@{SFML}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{SFML}{SFML}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} TTT\+::\+Log\+::\+SFML = \char`\"{}SFML\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Module used in logging everything that has to do with the SFML library. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00064}{64}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a14dc1174857354aeb652e122c454eca2}\label{classTTT_1_1Log_a14dc1174857354aeb652e122c454eca2}} 
+\index{TTT::Log@{TTT::Log}!SUCCESS@{SUCCESS}}
+\index{SUCCESS@{SUCCESS}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{SUCCESS}{SUCCESS}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} TTT\+::\+Log\+::\+SUCCESS = \char`\"{}SUCCESS\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Success level indicates that an operation was successful. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00066}{66}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a6ac67b7b0cec950c5df84ae6e419a13a}\label{classTTT_1_1Log_a6ac67b7b0cec950c5df84ae6e419a13a}} 
+\index{TTT::Log@{TTT::Log}!TTT@{TTT}}
+\index{TTT@{TTT}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{TTT}{TTT}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} TTT\+::\+Log\+::\+TTT = \char`\"{}TTT\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Module used in the most critical of logs. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00059}{59}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_ab29329ac16395bcf5349125c74d649e7}\label{classTTT_1_1Log_ab29329ac16395bcf5349125c74d649e7}} 
+\index{TTT::Log@{TTT::Log}!UTILS@{UTILS}}
+\index{UTILS@{UTILS}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{UTILS}{UTILS}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} TTT\+::\+Log\+::\+UTILS = \char`\"{}UTILS\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Module used in logging everything that has to do with the utilities class. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00062}{62}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_a4c08290e90c45ea78e98face802f6ccb}\label{classTTT_1_1Log_a4c08290e90c45ea78e98face802f6ccb}} 
+\index{TTT::Log@{TTT::Log}!WARNING@{WARNING}}
+\index{WARNING@{WARNING}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{WARNING}{WARNING}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_afedc0269ad11c78172fb609268de5b35}{level}} TTT\+::\+Log\+::\+WARNING = \char`\"{}WARNING\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Warning level indicates that there\textquotesingle{}s something wrong with the program but doesn\textquotesingle{}t require immediate attention. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00068}{68}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_afeb8e9cb32e71f125f1b8e7828a401c6}\label{classTTT_1_1Log_afeb8e9cb32e71f125f1b8e7828a401c6}} 
+\index{TTT::Log@{TTT::Log}!WHITE@{WHITE}}
+\index{WHITE@{WHITE}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{WHITE}{WHITE}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_aeae6359052c3a3ff5523b3aaacd9b053}{color}} TTT\+::\+Log\+::\+WHITE = \char`\"{}\textbackslash{}033\mbox{[}37m\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+White color paints output white. Used when displaying basic information. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00075}{75}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+\mbox{\Hypertarget{classTTT_1_1Log_afe46f37b16dba30b17a148c9a745e4c6}\label{classTTT_1_1Log_afe46f37b16dba30b17a148c9a745e4c6}} 
+\index{TTT::Log@{TTT::Log}!WINDOW@{WINDOW}}
+\index{WINDOW@{WINDOW}!TTT::Log@{TTT::Log}}
+\doxysubsubsection{\texorpdfstring{WINDOW}{WINDOW}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceTTT_a901999f31041ae34761c0111b5a5cd96}{module}} TTT\+::\+Log\+::\+WINDOW = \char`\"{}WINDOW\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Module used in logging everything that has to do with the window. 
+
+
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00061}{61}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+TTT/\mbox{\hyperlink{TTT_8hpp}{TTT.\+hpp}}\item 
+src/\mbox{\hyperlink{TTT__Log_8cpp}{TTT\+\_\+\+Log.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,135 @@
+.TH "TTT" 3 "Tue Mar 7 2023" "Version v1.0.1" "TTT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TTT \- The TTT namespace, which includes everything in the library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBLog\fP"
+.br
+.RI "Logger class not really meant to be used outside of the library\&. "
+.ti -1c
+.RI "class \fBUtils\fP"
+.br
+.RI "Utilities class for smaller and miscellaneous functions like the 'showFPS' one\&. "
+.ti -1c
+.RI "class \fBWindow\fP"
+.br
+.RI "The 'Window' class initializes the window and everything else (like the default event loop)\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef std::string \fBmodule\fP"
+.br
+.RI "Type definition for different modules\&. "
+.ti -1c
+.RI "typedef std::string \fBlevel\fP"
+.br
+.RI "Type definition for different levels\&. "
+.ti -1c
+.RI "typedef std::string \fBcolor\fP"
+.br
+.RI "Type definition for different colors\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::string \fBcurrentTime\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "std::fstream \fBlogFile\fP"
+.br
+.ti -1c
+.RI "sf::Clock \fBclock\fP"
+.br
+.ti -1c
+.RI "sf::Text \fBfpsText\fP"
+.br
+.ti -1c
+.RI "std::stringstream \fBss\fP"
+.br
+.ti -1c
+.RI "bool \fBisKeyPressed\fP = false"
+.br
+.ti -1c
+.RI "int \fBframeCount\fP = 0"
+.br
+.ti -1c
+.RI "const float \fBstartTime\fP = clock\&.getElapsedTime()\&.asSeconds()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The TTT namespace, which includes everything in the library\&. 
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef std::string \fBTTT::color\fP"
+
+.PP
+Type definition for different colors\&. 
+.PP
+Definition at line \fB19\fP of file \fBTTT\&.hpp\fP\&.
+.SS "typedef std::string \fBTTT::level\fP"
+
+.PP
+Type definition for different levels\&. 
+.PP
+Definition at line \fB18\fP of file \fBTTT\&.hpp\fP\&.
+.SS "typedef std::string \fBTTT::module\fP"
+
+.PP
+Type definition for different modules\&. 
+.PP
+Definition at line \fB17\fP of file \fBTTT\&.hpp\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "const std::string TTT::currentTime ()"
+
+.PP
+Definition at line \fB32\fP of file \fBTTT_Log\&.cpp\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "sf::Clock TTT::clock"
+
+.PP
+Definition at line \fB14\fP of file \fBTTT_Utils\&.cpp\fP\&.
+.SS "sf::Text TTT::fpsText"
+
+.PP
+Definition at line \fB16\fP of file \fBTTT_Utils\&.cpp\fP\&.
+.SS "int TTT::frameCount = 0"
+
+.PP
+Definition at line \fB22\fP of file \fBTTT_Utils\&.cpp\fP\&.
+.SS "bool TTT::isKeyPressed = false"
+
+.PP
+Definition at line \fB20\fP of file \fBTTT_Utils\&.cpp\fP\&.
+.SS "std::fstream TTT::logFile"
+
+.PP
+Definition at line \fB44\fP of file \fBTTT_Log\&.cpp\fP\&.
+.SS "std::stringstream TTT::ss"
+
+.PP
+Definition at line \fB18\fP of file \fBTTT_Utils\&.cpp\fP\&.
+.SS "const float TTT::startTime = clock\&.getElapsedTime()\&.asSeconds()"
+
+.PP
+Definition at line \fB24\fP of file \fBTTT_Utils\&.cpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TTT from the source code\&.
