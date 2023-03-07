@@ -1342,7 +1342,6 @@ HTML_STYLESHEET        =
 HTML_EXTRA_STYLESHEET  = submodules/doxygen-awesome-css/doxygen-awesome.css \
                          submodules/doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
                          submodules/doxygen-awesome-css/doxygen-awesome-sidebar-only-darkmode-toggle.css \
-                         docs/dropdown.css \
                          custom.css
 
 # The HTML_EXTRA_FILES tag can be used to specify one or more extra images or
@@ -1354,8 +1353,7 @@ HTML_EXTRA_STYLESHEET  = submodules/doxygen-awesome-css/doxygen-awesome.css \
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
 HTML_EXTRA_FILES       = submodules/doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js \
-                         submodules/doxygen-awesome-css/doxygen-awesome-interactive-toc.js \
-                         docs/selectversion.js
+                         submodules/doxygen-awesome-css/doxygen-awesome-interactive-toc.js
 
 # The HTML_COLORSTYLE tag can be used to specify if the generated HTML output
 # should be rendered with a dark or light theme.
