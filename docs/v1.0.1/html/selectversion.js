@@ -9,7 +9,7 @@ let master = 'master';
 
 /// Pathname part of the URL containing the different versioned doxygen
 /// subdirectories. Must be browsable.
-let urlroot = '/project-name/docs-subfolder';
+let urlroot = '/TTT-docs/docs/';
 
 ///=============================================================================
 // Remove trailing '/'.
