@@ -53,7 +53,7 @@ int main()
 
     TTT::Window ttt(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE /* optional */);
 
-    return;
+    return 0;
 }
 ```
 
