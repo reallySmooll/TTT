@@ -51,6 +51,8 @@ int main()
     TTT::Window::toggleFPS                    = true; // True or false for toggling FPS at startup.
     TTT::Window::shouldCreateDefaultEventLoop = true; // True or false for creating a default immutable event loop.
 
+    TTT::Window::defaultEventLoopFontFilename = "path/to/font/for/default/event/loop";
+
     TTT::Window ttt(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE /* optional */);
 
     return 0;
