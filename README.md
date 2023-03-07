@@ -34,7 +34,7 @@ $ sudo mv /usr/local/lib/pkgconfig/TTT.pc /usr/lib/pkgconfig/
 The latter commands will install the library system-wide so you can use it anywhere without having to keep a `.a` file in your `lib` folder.
 
 ## Documentation
-Documentation is work in progress but you can already find it at https://reallysmooll.github.io/TTT.
+Documentation is work in progress but you can already find it at https://reallysmooll.github.io/TTT-docs.
 
 ## Third party projects used
 [Doxygen Awesome](https://www.github.com/jothepro/doxygen-awesome-css) - jothepro
