@@ -1,4 +1,4 @@
-\tableofcontents
+[TOC]
 
 # Release Notes
 These are the release notes for each new version of TTT.

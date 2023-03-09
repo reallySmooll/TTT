@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "TTT", "index.html", [
-    [ "TTT", "index.html#autotoc_md2", [
+    [ "TTT", "index.html#autotoc_md3", [
       [ "Building", "index.html#autotoc_md4", [
         [ "Dependencies", "index.html#autotoc_md5", null ],
         [ "Actually building", "index.html#autotoc_md6", null ]
@@ -36,7 +36,7 @@ var NAVTREE =
     [ "CHANGELOG", "md_CHANGELOG.html", [
       [ "Release Notes", "md_CHANGELOG.html#autotoc_md0", [
         [ "v1.0.1 | Mar. 7, 2023", "md_CHANGELOG.html#autotoc_md1", null ],
-        [ "v1.0.0 | Mar. 5, 2023", "md_CHANGELOG.html#autotoc_md3", null ]
+        [ "v1.0.0 | Mar. 5, 2023", "md_CHANGELOG.html#autotoc_md2", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [

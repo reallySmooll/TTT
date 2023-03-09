@@ -1,0 +1,79 @@
+.TH "md_README" 3 "Wed Mar 8 2023" "Version v1.0.1" "TTT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md_README \- README 
+.PP
+{mainpage}
+.SH "TTT"
+.PP
+TTT is a simple wrapper library around SFML made to simplify the making of an SFML game\&.
+.SS "Building"
+\fBNOTE: To build on Windows or macOS, you will need to check the meson documentation by yourself\&. Maybe I'll consider doing that but that's a project for another day\&.\fP
+.SS "Dependencies"
+Like with any project, there will always be some dependencies (no exceptions), this project has them:
+.PP
+.IP "\(bu" 2
+SFML (the library that's being wrapped)
+.IP "\(bu" 2
+Meson (the build system)
+.IP "\(bu" 2
+Ninja
+.IP "\(bu" 2
+git
+.IP "\(bu" 2
+A C++ compiler
+.IP "\(bu" 2
+pkg-conf
+.PP
+.SS "Actually building"
+4 commands, not much else if you have all of the needed dependencies\&.
+.PP
+.PP
+.nf
+$ git clone https://github\&.com/reallySmooll/TTT\&.git
+$ cd TTT
+$ meson setup build
+$ meson compile \-C build
+.fi
+.PP
+.PP
+You can also do:
+.PP
+.PP
+.nf
+$ sudo meson install \-C build
+$ sudo mv /usr/local/lib/pkgconfig/TTT\&.pc /usr/lib/pkgconfig/
+.fi
+.PP
+.PP
+The latter commands will install the library system-wide so you can use it anywhere without having to keep a \fC\&.a\fP file in your \fClib\fP folder\&.
+.SS "Usage"
+A basic setup looks something like this (main\&.cpp):
+.PP
+.PP
+.nf
+#include <TTT/TTT\&.hpp>
+
+#include <string>
+
+constexpr int WINDOW_WIDTH         = 800;  // You don't have to write it exactly like here\&.
+constexpr int WINDOW_HEIGHT        = 600;  // You don't have to write it exactly like here\&.
+constexpr std::string WINDOW_TITLE = "TTT" // You don't have to write it exactly like here\&.
+
+int main()
+{
+    TTT::Window::verbose                      = true; // True or false for debug output\&.
+    TTT::Window::toggleFPS                    = true; // True or false for toggling FPS at startup\&.
+    TTT::Window::shouldCreateDefaultEventLoop = true; // True or false for creating a default immutable event loop\&.
+
+    TTT::Window::defaultEventLoopFontFilename = "path/to/font/for/default/event/loop";
+
+    TTT::Window ttt(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE /* optional */);
+
+    return 0;
+}
+.fi
+.PP
+.SS "Documentation"
+Documentation is work in progress but you can already find it at https://reallysmooll.github.io/TTT-docs\&. 
