@@ -13,7 +13,7 @@ Like with any project, there will always be some dependencies (no exceptions), t
 - Meson (the build system)
 - Ninja
 - git
-- A C++ compiler
+- A C++ compiler that supports at least version C++20
 - pkg-conf
 
 ### Actually building
