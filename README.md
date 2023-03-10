@@ -3,6 +3,8 @@
 # TTT
 TTT is a simple wrapper library around SFML made to simplify the making of an SFML game.
 
+**NOTE: This project isn't really meant to be updated. It was something I wanted to do for fun, but if you'd like to develop it further or something then please do so.**
+
 ## Building
 **NOTE: To build on Windows or macOS, you will need to check the meson documentation by yourself. Maybe I'll consider doing that but that's a project for another day.**
 
